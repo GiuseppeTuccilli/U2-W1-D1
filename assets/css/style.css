@@ -23,6 +23,8 @@ header {
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
 }
+
+
 header div img {
     margin-bottom: 20px;
 }
@@ -41,6 +43,13 @@ header nav li a:hover {
 }
 header nav li a::before {
     content: "\22c6\0020";
+}
+
+@media screen and (min-width:576px){
+    header ul li{
+        display: inline-block;
+        margin: 0 0.5em;
+    }
 }
 
 /* MAIN */
@@ -129,6 +138,7 @@ tbody tr:last-of-type {
     border-bottom: 2px solid #3f6bca;
 }
 
+
 /* FORM */
 input {
     padding: 5px;
@@ -178,3 +188,136 @@ footer {
 footer a {
     color: fuchsia;
 }
+
+@media screen and (min-width: 768px){
+   
+main article h1{
+    font-size:6rem;
+}
+
+p{font-size: 1.5em;}
+
+aside div p:last-child{
+font-size: 1.2em;
+}
+
+main li {
+    font-size: 1.5em;
+}
+address{
+    font-size: 1.5em;
+}
+
+article input{
+    width: 35em;
+    height: 3em;
+}
+
+article button{
+    height: 3em;
+    width: 7em;
+}
+
+    table{
+        margin-left:auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width:1200px){
+    table{
+        width:60%;
+    }
+
+    header{
+        text-align: unset;
+        padding:1em 2em;
+    }
+
+    header div{
+        display: inline-block;
+    }
+
+    header div img{
+        margin-bottom: 0;
+    /* margin-top: 1em; */
+    position: absolute;
+    transform: translateY(10px);
+    }
+
+    header div p {
+        display: inline-block;
+    /* margin-top: 0; */
+    
+    margin-left: 12em;
+    margin-top: 0.8em;
+    transform: translateY(5px);
+    }
+
+    header nav {
+        display: inline-block;
+    /* margin-left: 80%; */
+    float: right;
+    margin-top: 1.5em;;
+    
+   
+    }
+
+    main{
+        padding:2em 2em;
+    }
+
+    header nav ul{
+        font-size: 1.5em;
+    }
+
+    main article h1{
+        margin-left:0.1em;
+    }
+
+    main ul{
+        padding-left:1em;
+    }
+
+    main ol{
+        padding-left:1em;
+    }
+
+    main article iframe{
+        width: 49%;
+    height: 18em;
+    margin-bottom: 2em;
+    border-radius: 20px;
+    display: inline-block;
+    float: left;
+    }
+
+    main article section{
+            background-color: #e3e3e3;
+    padding: 1em;
+    margin-bottom: 2em;
+    display: inline-block;
+    width: 49%;
+    height: 18em;
+    border-radius: 20px;
+    }
+
+    main aside{
+        text-align: center;
+    }
+
+    main aside h2{
+        font-size: 4rem;
+    }
+
+    main aside div{
+        display: inline-block;
+        width: 33%;
+        text-align: left;
+    }
+
+    footer{
+            padding: 2em 16em;
+    }
+}
+
